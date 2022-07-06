@@ -1,0 +1,264 @@
+body,
+h1,
+h2,
+h3,
+p,
+span {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto";
+  font-style: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container-zed {
+  padding: 30px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 900px;
+  padding: 40px 20px;
+  margin: 0 auto;
+}
+
+main {
+  background: #fff;
+}
+
+.header {
+  background: #161616;
+  border: #161616;
+  display: flex;
+  justify-content: center;
+}
+
+.header-menu {
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.header-menu a {
+  font-size: 1rem;
+  padding: 5px 15px;
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  position: relative;
+  border-radius: 5px;
+}
+
+.header-menu a:hover {
+  display: block;
+  background: #878787;
+  color: #1c1a2d;
+}
+
+.font-h1 {
+  color: #463840;
+  font-size: 3.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: "El Messiri";
+}
+
+.font-span {
+  color: #fff;
+  font-family: "Roboto";
+  text-transform: uppercase;
+  line-height: 1.5;
+  font-family: "El Messiri";
+}
+
+.container span {
+  margin-top: 50px;
+}
+
+.h1-principal {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: bold;
+  justify-content: center;
+  font-family: "El Messiri";
+}
+
+.h1-display {
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: bold;
+  justify-content: center;
+  font-family: "Fira Sans", monospace;
+}
+
+.main-conteudo {
+  display: flex;
+  margin-top: 50px;
+  background: #161616;
+  border: 2px solid #463840;
+}
+
+.main-conteudo p {
+  color: #878787;
+  padding: 20px;
+  margin-top: 20px;
+  margin-left: 50px;
+  text-align: start;
+  line-height: 1.1;
+}
+
+.main-conteudo div {
+  padding: 30px;
+}
+
+.imagem-iconi {
+  max-width: 50px;
+  margin-bottom: 5px;
+}
+
+/*habilidades do zed */
+
+.background-zed {
+  background-color: #000913;
+}
+
+.habilidades-zed {
+  font-size: 3rem;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 50px;
+  font-family: "El Messiri";
+}
+
+.habilidades-zed h2 {
+  max-width: 900px;
+}
+
+.passiva {
+  color: #9c9c9c;
+  font-size: 1rem;
+  font-family: "El Messiri";
+  text-transform: uppercase;
+}
+
+.habilidades-game {
+  font-family: "El Messiri";
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.habilidade-desc {
+  color: #878787;
+  font-size: 1rem;
+  font-family: "Roboto";
+  line-height: 1;
+}
+
+.habilidades-geral {
+  margin-bottom: 50px;
+}
+
+/* zedskins*/
+
+.background-skin {
+  background: #000;
+}
+
+/*FOOTER*/
+
+footer {
+  background: #161616;
+}
+
+.footer {
+  max-width: 1200px;
+  padding: 120px;
+  align-items: center;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.footer p {
+  color: #fff;
+  font-size: 1.125rem;
+
+  line-height: 1.1;
+  font-family: "ROBOTO";
+}
+
+.tabv-menu div {
+  display: flex;
+}
+
+.skils-lista li {
+  justify-content: center;
+  width: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
+  cursor: pointer;
+  border: 3px solid transparent;
+  opacity: 0.8;
+  transform: scale(0.8);
+  transition: 0.4s;
+}
+
+.skils-lista li.ativo {
+  opacity: 1;
+  transform: scale(1.2);
+  border: 3px solid #878787;
+}
+
+.skils-lista li:hover {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.flex {
+  display: flex;
+}
+
+.habilidades-div {
+  margin-top: 30px;
+  margin-left: 50px;
+}
+
+.zed-content {
+  margin-bottom: 60px;
+}
+
+.js [data-tab="content"] section {
+  display: none;
+}
+
+[data-tab="content"] section.ativo {
+  display: block !important;
+  animation: show-down 0.5s forwards;
+}
+
+@keyframes show-down {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -30px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
